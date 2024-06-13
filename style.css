@@ -1,0 +1,47 @@
+body{
+    background-color:#659C61;
+    height: 100%;
+}
+
+.title{
+    font-size: 80px;
+    color: white;
+    text-align: start;
+    margin: 0;
+}
+
+.box{
+    color: white;
+    float: left;
+    width: 150px;
+    height: 30px;
+    background-color: #393B4F;
+    padding: 5px;
+    margin: 60px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 12px;
+}
+
+.box1{
+    border: burlywood solid;
+    position: relative;
+    padding: 223px 223px;
+    z-index: -1;
+    transform: rotate(51deg);
+    display: inline-block;
+    right: 490px;
+}
+
+.box2{
+    border: burlywood solid;
+    position: relative;
+    padding: 223px 223px;
+    z-index: -1;
+    transform: rotate(51deg);
+    display: inline-block;
+    bottom: 880px;
+    right: 148px;
+}
