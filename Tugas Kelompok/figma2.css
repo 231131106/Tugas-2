@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./foto\ walpaper.jpg);
+    background-size: 1100px;
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    width: 200px;
+    background-color: #cafaca;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+.sidebar img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.sidebar a:hover {
+    background-color: #C0C0C0;
+}
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.grid-item {
+    background-color: #98FB98;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.grid-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-item p {
+    margin: 10px 0;
+}
+.grid-item button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.logout {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
