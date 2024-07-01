@@ -7,6 +7,7 @@
     <title>Home - Here some update for you</title>
 </head>
 <body>
+    <!-- bagian 1  -->
     <section class="one cf">
         <img class="logo1" src="./img/68267a809d15e74ef49449a3bfcd967e-removebg-preview 2.png" alt="logo.png">
         <nav>
@@ -22,12 +23,11 @@
         </nav>
         <button class="logout">LogOut</button>
     </section>
-    <!-- bagian  -->
-    <section class="two">
+    <!-- bagian 2 -->
+    <section class="two" id="two">
         <section class="search">search</section>
         <section class="caption"><h1 class="bring_health">Bring Health To Every<br>Corner Of Earth</h1>
-            <section class="readmore">
-                <a class="readmore_link" href="#">Read More</a></section>
+            <a class="readmore" href="#">Read More</a>
             <img class="logo2" src="./img/Ellipse 2.png" alt="style2">
             <img class="logo3" src="./img/Ellipse 3.png" alt="style3">
         </section>
@@ -35,26 +35,36 @@
         <section class="recommendations">
             <section class="recommendation-title">Recommendation:</section>
             <section class="cards-container">
-                <section class="card1">
-                    <img src="./img/kangkung-removebg-preview 1.png">
-                    <section class="tulisan">
+                <section class="card1" id="pengecilan">
+                    <img id="pengecilan-img" src="./img/kangkung-removebg-preview 1.png">
+                    <section class="tulisan" id="teks-kecil">
                         <section class="tulisan1">Kangkung</section>
                         <section class="harga">Rp 12.000</section>
                     </section>
                     <section class="button">
                         <a class="beli" href="#">+</a>
-                        <a class="deskripsi" href="#" id="klik">></a>
+                        <a class="deskripsi" href="#klik" onclick="showdes()">></a>
+                        <section class="des" id="klik">
+                            <p>Kangkung punya banyak banget olahan masakannya lo bun. <br> <br>Buat para bunda-bunda yang gak pengen ribet dan tetap healthy, <br><br>“Kangkung tumis bawang putih” <br> bisa jadi salah satu resep yang enak dan gak ribet.<br>
+                                Buat resepnya : <br>
+                                1 ikat kangkung (siangi) <br>
+                                4 siung bawang putih (iris tipis) <br>
+                                3 buah cabai rawit (iris serong)</p>
+                        </section>
                     </section>
                 </section>
-                <section class="card">
-                    <img src="./img/bayam-removebg-preview 1.png">
-                    <section class="tulisan">
+                <section class="card" id="pengecilan1">
+                    <img id="pengecilan-img1" src="./img/bayam-removebg-preview 1.png">
+                    <section class="tulisan" id="tulisan-kecil1">
                         <section class="tulisan1">Bayam</section>
                         <section class="harga">Rp 15.000</section>
                     </section>
                     <section class="button">
                         <a class="beli" href="#">+</a>
-                        <a class="deskripsi" href="#">></a>
+                        <a class="deskripsi" href="#klik" onclick="showdes2()">></a>
+                        <section class="des" id="klik1">
+                            <p>Bayam termasuk salah satu sayuran dengan nutrisi paling banyak loh. <br><br>Selain kaya akan anti-oksidan dan kalsium salah satu resep masakan yang anti ribet dan juga di sukai keluarga, <br><br>“Sayur bening bayam dengan jagung manis” yang hangat dan comfortable banget, cocok buat cuaca mendung.</p>
+                        </section>
                     </section>
                 </section>
                 <section class="card">
@@ -82,5 +92,21 @@
             </section>
         </section>
     </section>
+
+    <script>
+        function showdes() {
+            document.getElementById("klik").style.display = "block";
+            document.getElementById("pengecilan").style.height = "150px";
+            document.getElementById("pengecilan-img").style.height = "90px";
+            document.body.style.overflow = "auto"; 
+        }
+
+        function showdes2() {
+            document.getElementById("klik1").style.display = "block";
+            document.getElementById("pengecilan1").style.height = "150px";
+            document.getElementById("pengecilan-img1").style.height = "90px";
+            document.body.style.overflow = "auto"; 
+        }
+    </script>
 </body>
 </html>

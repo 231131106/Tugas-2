@@ -125,12 +125,13 @@ li{
     background-image: url(../img/Frame\ 2.png);
     background-size: cover;
     border-radius: 20px 0 0 20px;
+    height: 900px;
 }
 
 .search{
     margin: 30px 0 30px 50px;
     padding: 20px 30px;
-    width: 60%;
+    width: 59%;
     height: 1px;
     background-color: #8EFFD6;
     box-shadow: 2px 2px 10px black;
@@ -143,13 +144,13 @@ li{
 .caption{
     margin: 10px 0 0 50px;
     padding: 20px 30px;
-    width: 60%;
-    height: 200px;
+    width: 59%;
+    height: 190px;
     background-color: #FFDFDF;
     box-shadow: 2px 2px 10px black;
     border-radius: 20px;
     text-align: right;
-    font-size: 50px;
+    font-size: 40px;
     font-weight:500;
     line-height: 60px;
     position: relative;
@@ -160,12 +161,11 @@ li{
     position: relative;
 }
 
-.readmore_link{
+.readmore{
     text-decoration: none;
     text-align: center;
     width: 110px;
     height: 40px;
-    margin-top: 4%;
     display: inline-block;
     background-color: #FF8F80;
     border-radius: 10px;
@@ -177,18 +177,27 @@ li{
 }
 
 .logo2{
+    display: inline-block;
+    width: 60%;
+    height: 80%;
     position: absolute;
-    top: 3%;
-    left: 2%;
+    top: 7%;
+    left: 3%
 }
 
 .logo3{
+    display: inline-block;
+    width: 60%;
+    height: 80%;
     position: absolute;
     top: 18%;
-    left: 5%;
+    left: 6%;
 }
 
 .gambar{
+    display: inline-block;
+    width: 23%;
+    height: 47%;
     position: absolute;
     top: 4%;
     right: 1.2%;
@@ -317,8 +326,23 @@ li{
     max-height: 165px;
 }
 
+.des {
+    width: 200px;
+    height: max-content;
+    text-align: left;
+    color: black;
+    position: relative;
+    background-color: #AEFFB1;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 2px 2px 10px;
+    left: -130px;
+    top: 30px;
+    display: none;
+}
+
+
 @media(max-width: 480px){
-        /* Reset CSS */
     * {
         margin: 0;
         padding: 0;
