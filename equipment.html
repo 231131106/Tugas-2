@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .support {
+                background-color: #c8ead1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+            .support .overlap-wrapper {
+                background-color: #c8ead1;
+                overflow: hidden;
+                width: 1440px;
+                height: 1024px;
+            }
+            .support .overlap {
+                position: relative;
+                width: 1561px;
+                height: 1024px;
+                left: 5px;
+            }
+            .support .img {
+                position: absolute;
+                width: 135px;
+                height: 135px;
+                top: 48px;
+                left: 20px;
+                object-fit: cover;
+            }
+            .support .overlap-group {
+                position: absolute;
+                width: 1561px;
+                height: 1024px;
+                top: 0;
+                left: 0;
+            }
+            .support .overlap-group-wrapper {
+                position: absolute;
+                width: 259px;
+                height: 50px;
+                top: 426px;
+                left: 0;
+            }
+            .support .div-wrapper {
+                position: relative;
+                width: 257px;
+                height: 50px;
+                background-color: #ffffff;
+                border-radius: 25px;
+                box-shadow: 0px 4px 4px #00000040, 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+            }
+            .support .text-wrapper {
+                position: absolute;
+                height: 25px;
+                top: 14px;
+                left: 63px;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .rectangle {
+                position: absolute;
+                width: 1253px;
+                height: 1024px;
+                top: 0;
+                left: 182px;
+                object-fit: cover;
+            }
+            .support .vector {
+                position: absolute;
+                width: 1220px;
+                height: 1007px;
+                top: 17px;
+                left: 215px;
+            }
+            .support .lil-vaggie {
+                position: absolute;
+                width: 106px;
+                height: 100px;
+                top: 892px;
+                left: 1307px;
+            }
+            .support .menu {
+                position: absolute;
+                width: 101px;
+                height: 298px;
+                top: 232px;
+                left: 50px;
+            }
+            .support .div {
+                position: absolute;
+                height: 25px;
+                top: 143px;
+                left: 0;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .text-wrapper-2 {
+                position: absolute;
+                height: 25px;
+                top: 273px;
+                left: 25px;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .text-wrapper-3 {
+                position: absolute;
+                height: 25px;
+                top: 78px;
+                left: 27px;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .text-wrapper-4 {
+                position: absolute;
+                height: 25px;
+                top: 0;
+                left: 20px;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .kerikil-dan-pasir {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 477px;
+                left: 289px;
+            }
+            .support .overlap-2 {
+                position: relative;
+                width: 293px;
+                height: 278px;
+                background-color: #adffb0;
+                border-radius: 20px;
+                box-shadow: 0px 4px 4px #00000040, 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+            }
+            .support .image-wrapper {
+                position: absolute;
+                width: 256px;
+                height: 212px;
+                top: 12px;
+                left: 19px;
+                background-color: #ffffff;
+                border-radius: 20px;
+            }
+            .support .image {
+                width: 190px;
+                height: 169px;
+                left: 33px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .text-wrapper-5 {
+                position: absolute;
+                height: 40px;
+                top: 230px;
+                left: 27px;
+                font-family: "JetBrains Mono-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 15px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .overlap-group-2 {
+                position: absolute;
+                width: 56px;
+                height: 30px;
+                top: 233px;
+                left: 212px;
+            }
+            .support .rectangle-2 {
+                position: absolute;
+                width: 56px;
+                height: 29px;
+                top: 1px;
+                left: 0;
+                background-color: #00c880;
+                border-radius: 19px;
+            }
+            .support .text-wrapper-6 {
+                position: absolute;
+                width: 48px;
+                height: 20px;
+                top: 0;
+                left: 4px;
+                font-family: "JetBrains Mono-Regular", Helvetica;
+                font-weight: 400;
+                color: #fcff96;
+                font-size: 40px;
+                text-align: center;
+                letter-spacing: 0;
+                line-height: normal;
+                white-space: nowrap;
+            }
+            .support .hydrogel {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 477px;
+                left: 614px;
+            }
+            .support .styrofoam {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 477px;
+                left: 939px;
+            }
+            .support .image-2 {
+                width: 189px;
+                height: 169px;
+                left: 39px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .charcoal {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 477px;
+                left: 1264px;
+            }
+            .support .image-3 {
+                width: 119px;
+                height: 169px;
+                left: 33px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .arang-sekan {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 112px;
+                left: 1264px;
+            }
+            .support .image-4 {
+                width: 115px;
+                height: 169px;
+                left: 37px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .rockwool {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 112px;
+                left: 939px;
+            }
+            .support .image-5 {
+                width: 193px;
+                height: 169px;
+                left: 37px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .cocopeat {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 112px;
+                left: 614px;
+            }
+            .support .image-6 {
+                width: 188px;
+                height: 169px;
+                left: 34px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .cocopeat-rp {
+                position: absolute;
+                height: 40px;
+                top: 230px;
+                left: 27px;
+                text-shadow: 0px 4px 4px #00000040;
+                font-family: "JetBrains Mono-Regular", Helvetica;
+                font-weight: 400;
+                color: #000000;
+                font-size: 15px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .support .pupuk-hydroponik {
+                position: absolute;
+                width: 297px;
+                height: 278px;
+                top: 112px;
+                left: 289px;
+            }
+            .support .image-7 {
+                width: 191px;
+                height: 170px;
+                left: 32px;
+                position: absolute;
+                top: 25px;
+                object-fit: cover;
+            }
+            .support .search {
+                position: absolute;
+                width: 862px;
+                height: 51px;
+                top: 36px;
+                left: 285px;
+            }
+            .support .logout {
+                position: absolute;
+                width: 111px;
+                height: 38px;
+                top: 912px;
+                left: 42px;
+            }
+            .support .overlap-3 {
+                position: relative;
+                width: 109px;
+                height: 38px;
+                background-color: #c80000ad;
+                border-radius: 19px;
+                box-shadow: 0px 4px 4px #00000040, 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+            }
+            .support .text-wrapper-7 {
+                position: absolute;
+                height: 25px;
+                top: 6px;
+                left: 23px;
+                font-family: "IM FELL English-Regular", Helvetica;
+                font-weight: 400;
+                color: #fff0f0;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: normal;
+            }.label {
+                width: 53px;
+                height: 19px;
+            }
+            .label .search {
+                position: relative;
+                width: 53px;
+                height: 19px;
+                top: 29px;
+                left: 270px;
+                font-family: "Gabriela-Regular", Helvetica;
+                font-weight: 400;
+                color: transparent;
+                font-size: 15px;
+                letter-spacing: 0;
+                line-height: normal;
+            }
+            .label .text-wrapper {
+                color: #00000080;
+            }
+            .label .span {
+                color: #000000;
+            }
+            .container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            }
+            h1 {
+                background-color: #90ee90;
+                border-radius: 20px;
+                padding: 10px 20px;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            .review-section {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .review-column {
+                flex: 1;
+                min-width: 250px;
+                margin: 10px;
+            }
+            h2 {
+                text-align: left;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+            .review-item {
+                background-color: #f5f5f5;
+                border-radius: 20px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                text-align: left;
+            }
+            .next-review {
+                margin-top: 20px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="support">
+            <div class="overlap-wrapper">
+                <div class="overlap">
+                    <img class="img" src="img/logo.png" />
+                    <div class="overlap-group">
+                        <div class="overlap-group-wrapper">
+                            <div class="div-wrapper"><div class="text-wrapper">Equipment</div></div>
+                        </div>
+                        <img class="rectangle" src="img/backgrounf.png" />
+                        <img class="vector" src="img/vector1.png" />
+                        <img class="lil-vaggie" src="img/lil vaggie.png" />
+                        <div class="menu">
+                            <div class="div">Support</div>
+                            <div class="text-wrapper-2">Help</div>
+                            <div class="text-wrapper-3">Seed</div>
+                            <div class="text-wrapper-4">Home</div>
+                        </div>
+                        <div class="pupuk-hydroponik">
+                            <div class="overlap-2">
+                                <div class="image-wrapper"><img class="image-7" src="img/TDS.jpeg" /></div>
+                                <div class="text-wrapper-5">Alat Ukur Hidroponik<br />Rp.35.000</div>
+                                <div class="overlap-group-2">
+                                    <div class="rectangle-2"></div>
+                                    <div class="text-wrapper-6">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cocopeat">
+                            <div class="overlap-2">
+                                <div class="image-wrapper"><img class="image-6" src="img/netpot.jpeg" /></div>
+                                <div class="cocopeat-rp">Net Pot 10pcs<br />Rp.7.000</div>
+                                <div class="overlap-group-2">
+                                    <div class="rectangle-2"></div>
+                                    <div class="text-wrapper-6">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rockwool">
+                            <div class="overlap-2">
+                                <div class="image-wrapper"><img class="image-5" src="img/rockwooll.jpeg" /></div>
+                                <div class="text-wrapper-5">Rockwool<br />Rp.74.000</div>
+                                <div class="overlap-group-2">
+                                    <div class="rectangle-2"></div>
+                                    <div class="text-wrapper-6">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arang-sekan">
+                            <div class="overlap-2">
+                                <div class="image-wrapper"><img class="image-4" src="img/tali.jpeg" /></div>
+                                <div class="text-wrapper-5">Tali Sumbu<br />Rp.1.500</div>
+                                <div class="overlap-group-2">
+                                    <div class="rectangle-2"></div>
+                                    <div class="text-wrapper-6">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="search" src="img/seacrimg.png" />
+                        <div class="label">
+                            <p class="search"><span class="text-wrapper">Search</span> <span class="span">&nbsp;</span></p>
+                        </div>
+                    </div>
+                    <div class="logout">
+                        <div class="overlap-3"><div class="text-wrapper-7">Logout</div></div>
+                    </div>
+                    <div class="container">
+                        <h1>Review for equipment</h1>
+                        <div class="review-section">
+                            <div class="review-column">
+                                <h2>Alat ukur hidroponik TDS&EC</h2>
+                                <div class="review-item">alan: alat ini cukup bagus dan menarik</div>
+                                <div class="review-item">len: murah dan bagus bangettt...</div>
+                            </div>
+                            <div class="review-column">
+                                <h2>Net pot</h2>
+                                <div class="review-item">Mommy: murah bangettttt...</div>
+                                <div class="review-item">Daddy: net pot sangat berguna</div>
+                            </div>
+                            <div class="review-column">
+                                <h2>Rockwool</h2>
+                                <div class="review-item">Lanciuy: wort it banget</div>
+                                <div class="review-item">Sukma: sesuai di gambar</div>
+                            </div>
+                            <div class="review-column">
+                                <h2>Tali sumbu</h2>
+                                <div class="review-item">Dontol: alat nya sesuai yang saya mau</div>
+                                <div class="review-item">Dennis: Tali nya kuat bangetttt</div>
+                            </div>
+                        </div>
+                        <div class="next-review">Next review &gt;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
